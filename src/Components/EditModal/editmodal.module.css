@@ -1,0 +1,138 @@
+.heading_box {
+  padding: 16px 24px;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.close_icon {
+  color: #bbbaba;
+  font-size: 1rem !important;
+}
+.content_box {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  border-bottom: 1px solid #e8e8e8;
+}
+.astrick_mark {
+  margin-right: 4px;
+  color: #f5222d;
+  font-size: 14px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+.label_name {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  margin-right: 5px;
+}
+.input_box {
+  width: 90%;
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+.input_container {
+  width: 90%;
+  text-align: right;
+}
+.form_Box {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.label_box {
+    width: 20%;
+}
+.outer_input_box{
+    width: 70%;
+}
+.input_box:focus-visible {
+  outline: none;
+  border: 1px solid rgb(152 226 160);
+}
+.button_box {
+  padding: 16px;
+}
+.buttons_inner_box {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.close_button {
+  font-size: 14px;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  padding: 10px 14px;
+  text-align: center;
+  cursor: pointer;
+}
+.save_button {
+  color: #fff;
+  background-color:rgb(152 226 160);
+  border-color: rgb(152 226 160);
+  font-size: 14px;
+  padding: 10px 14px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.input_inner_box {
+  width: 85%;
+}
+.error_message {
+  text-align: start;
+  font-size: 12px;
+  color: red;
+  float: left;
+  padding-left: 6.4rem;
+}
+.error {
+    border: 1px solid red;
+}
+.error_box {
+  height: 16px;
+}
+/* responsive */
+
+@media screen and (max-width: 600px) {
+  .input_container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+    .outer_input_box{
+        width: 80%;
+    }
+    .input_box{
+        width: 80%;
+    }
+  }
+  @media screen and (max-width: 348px){
+    .form_Box {
+        flex-direction: column;
+    }
+    .outer_input_box{
+        width: 100%;
+    }
+    .input_box{
+        width: 93%;
+        margin-top: 8px;
+    }
+  }
